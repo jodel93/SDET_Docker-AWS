@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="facad768-d6a2-448f-8082-75e6f9688ca1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/enums/Browser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/factory/DriverFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/driver/geckodriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/driver.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BookAFlightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BookAFlightTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/builder/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/builder/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
       <list>
         <option value="package-info" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>

@@ -20,6 +20,6 @@ public class Driver {
 
     @Bean
     public WebDriverWait webDriverWait(){
-        return new WebDriverWait(webDriver(), 30);
+        return new WebDriverWait(webDriver(), 10);
     }
 }

@@ -1,0 +1,7 @@
+<suite name="Book A Flight">
+    <test name="Test 1">
+        <classes>
+            <class name ="tests.BookAFlightTest"/>
+        </classes>
+    </test>
+</suite>

@@ -3,11 +3,13 @@ package tests;
 import base.BaseTest;
 import configuration.Driver;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.testng.annotations.Test;
 import pages.*;
 import utils.builder.UserBuilder;
 
+@DirtiesContext //Used to delete the context and create a new one "ClassMode.AFTER_CLASS" by default
 @ContextConfiguration(classes = {Driver.class})
 public class BookAFlightTest extends BaseTest {
 

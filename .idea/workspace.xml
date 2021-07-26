@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="facad768-d6a2-448f-8082-75e6f9688ca1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BookAFlightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BookAFlightTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/builder/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/builder/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +44,7 @@
       <recent name="C:\Users\Jorge\Desktop\SDET_Docker-AWS\src\test\resources\driver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.BookAFlightTest">
+  <component name="RunManager" selected="TestNG.C:/Users/Jorge/Desktop/SDET_Docker-AWS/testNG.xml">
     <configuration name="BookAFlightTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SDET_Docker-AWS" />
       <extension name="coverage">
@@ -95,6 +97,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/Jorge/Desktop/SDET_Docker-AWS/testNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDET_Docker-AWS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SDET_Docker-AWS" />
       <extension name="coverage">
@@ -114,6 +126,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Jorge/Desktop/SDET_Docker-AWS/testNG.xml" />
         <item itemvalue="TestNG.BookAFlightTest" />
         <item itemvalue="TestNG.BookAFlightTest" />
         <item itemvalue="TestNG.BookAFlightTest.Test" />

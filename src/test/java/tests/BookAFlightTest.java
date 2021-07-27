@@ -5,6 +5,7 @@ import configuration.Driver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import pages.*;
 import utils.builder.UserBuilder;
@@ -59,5 +60,10 @@ public class BookAFlightTest extends BaseTest {
     @Test(dependsOnMethods = "selectFlights")
     public void flightDetailsConfirmation(){
         flightDetailsPage.printConfirmation();
+    }
+
+    @AfterTest //Work around because when executing remote the driver hangs
+    public void quit(){
+        flightDetailsPage.getDriver().quit();
     }
 }

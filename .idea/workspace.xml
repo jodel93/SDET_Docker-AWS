@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="facad768-d6a2-448f-8082-75e6f9688ca1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/enums/Browser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/factory/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/driver/geckodriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/driver.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/configuration/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BookAFlightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BookAFlightTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/driver.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/driver.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +41,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -101,6 +101,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookAFlightTest.flightDetailsConfirmation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDET_Docker-AWS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.BookAFlightTest" />
+      <option name="METHOD_NAME" value="flightDetailsConfirmation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/Jorge/Desktop/SDET_Docker-AWS/testNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SDET_Docker-AWS" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
@@ -131,6 +149,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/Jorge/Desktop/SDET_Docker-AWS/testNG.xml" />
+        <item itemvalue="TestNG.BookAFlightTest.flightDetailsConfirmation" />
         <item itemvalue="TestNG.BookAFlightTest" />
         <item itemvalue="TestNG.BookAFlightTest" />
         <item itemvalue="TestNG.BookAFlightTest.Test" />
@@ -147,5 +166,8 @@
       <updated>1627303327222</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SDET_Docker_AWS$C__Users_Jorge_Desktop_SDET_Docker_AWS_testNG_xml.ic" NAME="$PROJECT_DIR$/testNG.xml Coverage Results" MODIFIED="1627344931448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

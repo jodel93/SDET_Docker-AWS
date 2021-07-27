@@ -37,14 +37,18 @@ public class Driver {
             else host = "localhost";
 
             if(System.getProperty("BROWSER") != null &&
-                    System.getProperty("BROWSER").equalsIgnoreCase("firefox"))
+                    System.getProperty("BROWSER").equalsIgnoreCase("firefox")) {
                 desiredCapabilities = DesiredCapabilities.firefox();
+            }
 
             else if(System.getProperty("BROWSER") != null &&
-                    System.getProperty("BROWSER").equalsIgnoreCase("edge"))
-                desiredCapabilities = desiredCapabilities = DesiredCapabilities.edge();
+                    System.getProperty("BROWSER").equalsIgnoreCase("edge")){
+                desiredCapabilities = DesiredCapabilities.edge();
+            }
 
-            else desiredCapabilities = DesiredCapabilities.chrome();
+            else
+                desiredCapabilities = DesiredCapabilities.chrome();
+            }
 
             return new RemoteWebDriver(new URL("http://"+ host + ":4444/wd/hub"), desiredCapabilities);
         }

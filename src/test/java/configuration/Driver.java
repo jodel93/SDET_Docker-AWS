@@ -2,15 +2,11 @@ package configuration;
 
 import enums.Browser;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 import utils.factory.DriverFactory;
 
 import java.net.MalformedURLException;
@@ -27,32 +23,32 @@ public class Driver {
     @Value("${remote.run:false}")
     private boolean isRemote;
 
-    @Value("${remote.host:http://localhost:4444/wd/hub}")
     private String host;
 
     private DesiredCapabilities desiredCapabilities;
 
     @Bean
     public WebDriver webDriver() throws MalformedURLException {
-        if (isRemote) {
-            switch (browserType) {
-                case chrome:
-                    desiredCapabilities = DesiredCapabilities.chrome();
-                    break;
 
-                case firefox:
-                    desiredCapabilities = DesiredCapabilities.firefox();
-                    break;
+        if(isRemote){
 
-                case ie:
-                    desiredCapabilities = DesiredCapabilities.edge();
-                    break;
+            if(System.getProperty("HOST") != null)
+                host = System.getProperty("HOST");
+            else host = "localhost";
 
-                default:
-                    break;
-            }
-            return new RemoteWebDriver(new URL(host), desiredCapabilities);
+            if(System.getProperty("BROWSER") != null &&
+                    System.getProperty("BROWSER").equalsIgnoreCase("firefox"))
+                desiredCapabilities = DesiredCapabilities.firefox();
+
+            else if(System.getProperty("BROWSER") != null &&
+                    System.getProperty("BROWSER").equalsIgnoreCase("edge"))
+                desiredCapabilities = desiredCapabilities = DesiredCapabilities.edge();
+
+            else desiredCapabilities = DesiredCapabilities.chrome();
+
+            return new RemoteWebDriver(new URL("http://"+ host + ":4444/wd/hub"), desiredCapabilities);
         }
+
         return DriverFactory.setUpDriver(browserType);
     }
 

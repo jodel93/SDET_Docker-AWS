@@ -47,6 +47,7 @@ public class Driver {
             }
 
             else
+            {
                 desiredCapabilities = DesiredCapabilities.chrome();
             }
 

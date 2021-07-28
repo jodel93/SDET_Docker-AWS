@@ -18,7 +18,7 @@ public class DriverFactory {
         }
         if(Browser.firefox == browser){
             System.setProperty("webdriver.gecko.driver",
-                    String.format(DRIVER_PATH, Browser.firefox.label));
+                    String.format(DRIVER_PATH, "geckodriver"));
             driver = new FirefoxDriver();
         }
         if(Browser.ie == browser){

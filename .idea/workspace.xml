@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="facad768-d6a2-448f-8082-75e6f9688ca1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BookAFlightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BookAFlightTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/factory/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/factory/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/driver.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/driver.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,8 +165,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/Jorge/Desktop/SDET_Docker-AWS/testNG.xml" />
-        <item itemvalue="TestNG.BookAFlightTest.flightDetailsConfirmation" />
         <item itemvalue="TestNG.BookAFlightTest" />
+        <item itemvalue="TestNG.BookAFlightTest.flightDetailsConfirmation" />
         <item itemvalue="TestNG.BookAFlightTest" />
         <item itemvalue="TestNG.BookAFlightTest.Test" />
       </list>

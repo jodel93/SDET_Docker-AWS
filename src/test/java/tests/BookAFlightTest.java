@@ -62,7 +62,7 @@ public class BookAFlightTest extends BaseTest {
         flightDetailsPage.printConfirmation();
     }
 
-    @AfterTest //Work around because when executing remote the driver hangs
+    @Test(dependsOnMethods = "flightDetailsConfirmation") //Work around because when executing remote the driver hangs
     public void quit(){
         flightDetailsPage.getDriver().quit();
     }

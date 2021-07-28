@@ -17,3 +17,25 @@ services:
       - hub
     environment:
       - HUB_HOST=hub
+  selenium-docker:
+    image: jorgedelgado93/selenium-docker
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=chrome
+      - HOST=hub
+      - MODULE=testNG.xml
+    volumes:
+      - ./book-a-flight-result:/usr/share/udemy/test-output
+  selenium-docker2:
+    image: jorgedelgado93/selenium-docker
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=chrome
+      - HOST=hub
+      - MODULE=testNG2.xml
+    volumes:
+      - ./book-a-flight-result2:/usr/share/udemy/test-output

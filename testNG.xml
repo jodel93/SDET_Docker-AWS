@@ -5,7 +5,7 @@
             <class name ="tests.BookAFlightTest"/>
         </classes>
     </test>
-    <test name="Test 2 Flights">
+    <test name="Test 2 Flights ">
         <classes>
             <class name ="tests.BookAFlightTest"/>
         </classes>
